@@ -1,0 +1,24 @@
+syntax="proto3";
+
+option java_multiple_files = true;
+option java_package = "com.laboratory.protobuf.models";
+message Persona{
+  string nombre = 1;
+  int32 edad = 2;
+  Direccion direccion =3;
+  repeated Auto auto = 4;
+}
+
+message Direccion{
+  string calle = 1;
+  int32 altura = 2;
+  string localidad = 3;
+
+}
+
+message Auto{
+  string anio = 1;
+  string marca = 2;
+  string modelo = 3;
+
+}

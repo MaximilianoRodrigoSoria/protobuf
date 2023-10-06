@@ -1,0 +1,12 @@
+syntax="proto3";
+
+option java_multiple_files = true;
+option java_package = "com.laboratory.protobuf.models";
+message Product{
+  int32 id = 1;
+  string name = 2;
+  string category = 3;
+  float price = 4;
+
+
+}
