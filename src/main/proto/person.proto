@@ -22,3 +22,6 @@ message Auto{
   string modelo = 3;
 
 }
+message  Concecionaria{
+   map<int32,Auto> modelo = 1;
+}
