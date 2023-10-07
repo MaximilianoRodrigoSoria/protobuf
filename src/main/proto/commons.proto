@@ -1,0 +1,12 @@
+syntax="proto3";
+
+option java_multiple_files = true;
+option java_package = "com.laboratory.protobuf.models";
+
+
+message Direccion{
+  string calle = 1;
+  int32 altura = 2;
+  string localidad = 3;
+
+}

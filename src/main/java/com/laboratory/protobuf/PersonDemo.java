@@ -1,8 +1,10 @@
 package com.laboratory.protobuf;
 
-import com.laboratory.protobuf.models.Auto;
+
 import com.laboratory.protobuf.models.Direccion;
 import com.laboratory.protobuf.models.Persona;
+import com.laboratory.protobuf.models.auto.Auto;
+import com.laboratory.protobuf.models.auto.Carroseria;
 
 import java.util.List;
 
@@ -18,6 +20,7 @@ public class PersonDemo {
                 .setMarca("Fiat")
                 .setModelo("Pulse")
                 .setAnio("2024")
+                .setCarroseria(Carroseria.COUPE)
                 .build());
 
         Direccion direccion = Direccion.newBuilder()
@@ -32,6 +35,9 @@ public class PersonDemo {
                 .addAllAuto(autos)
                 .setDireccion(direccion)
                 .build();
+
+
+
 
         System.out.println(maximiliano.toString());
 

@@ -1,0 +1,21 @@
+syntax="proto3";
+
+option java_multiple_files = true;
+option java_package = "com.laboratory.protobuf.models.auto";
+
+
+message Auto{
+  string anio = 1;
+  string marca = 2;
+  string modelo = 3;
+  Carroseria carroseria = 4;
+
+}
+
+
+enum Carroseria{
+  DESCONOCIDO = 0;
+  SEDAN = 1;
+  COUPE = 2;
+  SUV = 3;
+}
