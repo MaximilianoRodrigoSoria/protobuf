@@ -1,0 +1,25 @@
+syntax="proto3";
+
+option java_multiple_files = true;
+option java_package = "com.laboratory.protobuf.models.responses";
+
+
+message Error{
+  string message=1;
+  int32  code=2;
+  string trace = 3;
+  string path = 4;
+    }
+
+message ResponseBasic{
+  string object=1;
+  string code=2;
+}
+
+
+message Response{
+  oneof mode{
+    ResponseBasic response = 1;
+    Error error = 2;
+  }
+}
