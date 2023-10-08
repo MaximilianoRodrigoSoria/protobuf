@@ -1,6 +1,7 @@
 package com.laboratory.protobuf;
 
 
+import com.google.protobuf.Int32Value;
 import com.laboratory.protobuf.models.Direccion;
 import com.laboratory.protobuf.models.Persona;
 import com.laboratory.protobuf.models.auto.Auto;
@@ -34,6 +35,7 @@ public class PersonDemo {
                 .setEdad(35)
                 .addAllAuto(autos)
                 .setDireccion(direccion)
+                .setNumber(Int32Value.of(35))
                 .build();
 
 

@@ -4,12 +4,14 @@ option java_multiple_files = true;
 option java_package = "com.laboratory.protobuf.models";
 import "auto.proto";
 import "commons.proto";
+import "google/protobuf/wrappers.proto";
 
 message Persona{
   string nombre = 1;
   int32 edad = 2;
   Direccion direccion =3;
   repeated Auto auto = 4;
+  google.protobuf.Int32Value number=5;
 }
 
 
